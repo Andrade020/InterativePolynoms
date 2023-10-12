@@ -2,7 +2,9 @@
 This program allows users to interactively add points on a canvas and then visualize a polynomial curve that interpolates those points. The main mathematical technique used is the Lagrange Polynomial Interpolation.
 # Lagrange Polynomial Interpolation
 The concept of Lagrange Interpolation is to find a polynomial that passes through a given set of points. Given n points, there exists a unique polynomial of degree n-1 that passes through these points. The formula for the Lagrange polynomial is implemented as:
+
 L(x) = sum(yi * li(x) for i in range(n))
+
 Where the li(x) function is:
 li(x) = product((x - xj) / (xi - xj) for j in range(n) if i != j)
 This is implemented in the lagrange_interpolation function.
