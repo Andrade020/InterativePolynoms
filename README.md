@@ -6,7 +6,9 @@ The concept of Lagrange Interpolation is to find a polynomial that passes throug
 L(x) = sum(yi * li(x) for i in range(n))
 
 Where the li(x) function is:
+
 li(x) = product((x - xj) / (xi - xj) for j in range(n) if i != j)
+
 This is implemented in the lagrange_interpolation function.
 
 # Program Structure
